@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: darkgray;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  margin: 10px 0;
+  }
+
+.title {
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  font-family: Russo One;
+  background-color: black;
+  color: pink;
+  }
+
+.boxes-container {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  width: 30%;
+}
+
+.editorWrap .toolbar {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+ }
+
+.editorWrap {
+  position: relative;
+  max-width: 100%;
+  width: 500px;
+  margin: auto;
+}
+
+.toolbar {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  background-color: lightpink;
+  padding: 0.3rem;
+  border: 1px solid pink;
+  box-shadow: pink;
+  font-family: Russo One;
+  font-size: 1rem;
+  color: pink;
+  text-align: center;
+  margin: auto;
+}
+
+.editor {
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  font-size: 18px;
+  text-align: center;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  left: 210px;
+  top: -50%; 
+}
+
+.fab {
+  max-width: 100%;
+  position: relative;
+  left: -200px;
+}
+
+.fa {
+  max-width: 100%;
+  position: relative;
+  right: -180px;
+}
+
+#editor {
+  max-width: 100%;
+  margin: auto;
+  width: 500px;
+  height: 40vb;
+  font-size: 18px;
+  background-color: lightpink;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .editorWrap {
+    width: calc(100% - 40px);
+  }
+}
+
+.editorWrap #textarea {
+  min-height: 200px;
+  margin-bottom: -5px;
+  resize: vertical;
+  outline: none;
+  padding-left: 5px;
+  padding-top: 5px;
+  font-size: 0.875rem;
+  }
+
+@media screen and (max-width: 800px) {
+  .previewWrap {
+    width: calc(100% - 40px);
+  }
+}
+
+ .previewWrap .toolbar {
+  width: 100%;
+  position: relative;
+  max-width: 800px;
+  margin: 1.25rem auto;
+  overflow-wrap: break-word;
+  position: relative;
+  display: flex;
+  font-size: 18px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+ #toolbar{
+  top: 25px;
+  padding: 0.3rem;
+  border: 1px solid #212529;
+ }
+
+  #free {
+  max-width: 100%;
+  position: relative;
+  left: -250%;
+ }
+
+ #arr {
+  max-width: 100%;
+  position: relative;
+  left: 250%;
+ }
+
+  .previewer {
+  max-width: 100%;
+  margin: auto;
+  font-size: 18px;
+  background-color: lightpink;
+  text-align: left;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.previewWrap {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  overflow-wrap: break-word;
+}
+
+#preview {
+  margin: auto;
+  max-width: 800px;
+  font-size: 18px;
+  background-color: lightpink;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 200px;
+  margin-bottom: -5px;
+  border: 1px solid #212529;
+  overflow: hidden;
+}
